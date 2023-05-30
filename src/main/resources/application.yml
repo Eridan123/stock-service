@@ -1,0 +1,14 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: stock_service
+  config:
+    import=configserver: http://localhost:8888/
+
+#  datasource:
+#    driver-class-name: org.postgresql.Driver
+#    url: jdbc:postgresql://localhost:5432/stock_service_db?serverTimezone=UTC
+#    username: esarygulov
+#    password: root
+#    type: com.zaxxer.hikari.HikariDataSource
